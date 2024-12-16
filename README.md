@@ -11,19 +11,19 @@ The **Chow Test** is used to determine if there is a structural break in a regre
 
 The Chow Test statistic is calculated as follows:
 
-\[
-F = \frac{(RSS_{combined} - (RSS_1 + RSS_2)) / k}{(RSS_1 + RSS_2) / (N_1 + N_2 - 2k)}
-\]
+$$
+F = \frac{(RSS_\text{combined} - (RSS_1 + RSS_2)) / k}{(RSS_1 + RSS_2) / (N_1 + N_2 - 2k)}
+$$
 
 Where:
-- \( RSS_{combined} \): Residual sum of squares for the combined regression model.
-- \( RSS_1, RSS_2 \): Residual sum of squares for the two separate regressions.
-- \( k \): Number of parameters (including intercept) in the regression model.
-- \( N_1, N_2 \): Number of observations in each subset.
+- $$\( RSS_\text{combined} \)$$: Residual sum of squares for the combined regression model.
+- $$\( RSS_1, RSS_2 \)$$: Residual sum of squares for the two separate regressions.
+- $$\( k \)$$: Number of parameters (including intercept) in the regression model.
+- $$\( N_1, N_2 \)$$: Number of observations in each subset.
 
-The \( F \)-statistic follows the \( F \)-distribution with degrees of freedom:
-- Numerator: \( k \)
-- Denominator: \( N_1 + N_2 - 2k \)
+The $$\( F \)$$-statistic follows the $$\( F \)$$-distribution with degrees of freedom:
+- Numerator: $$\( k \)$$
+- Denominator: $$\( N_1 + N_2 - 2k \)$$
 
 ---
 
